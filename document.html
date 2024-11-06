@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box formInput" href="image/images.jpg">
+            <h2 class="title">Student Details</h2>
+            <form>
+                <div class="fields">
+                    <label for="schoolName" >School Name:</label>
+                    <input id="schoolName"/>
+                </div>
+                <div class="fields">
+                    <label for="studentName" >Student Name:</label>
+                    <input id="studentName"/>
+                </div>
+                <div class="fields">
+                    <label for="dateofBirth" >Date of Birth:</label>
+                    <input id="dateofBirth"/>
+                </div>
+                <div class="fields">
+                    <label for="class" >Class:</label>
+                    <input id="class"/>
+                </div>
+                <div class="fields">
+                    <label for="rollnumber" >Roll number:</label>
+                    <input id="rollnumber" type="number"/>
+                </div>
+                <div class="fields">
+                    <label for="contactNumber" >Contact Number:</label>
+                    <input id="contactNumber"/>
+                </div>
+
+                
+                <div class="buttoncontainer">
+                    <button class="btn" type="button" onclick="updatecard()">submit form</button>
+                    <button class="btn ml-10" type="reset">Clear All</button>
+                    
+                </div>
+            </form>
+
+        </div>
+        <div class="box card">
+            <h2 class="title" id="schoolNameval">Enter School Name</h2>
+            <div class="imagecontainer">
+              <img src="./image/download.jpg" alt="Student profile"/>
+            </div>
+           
+            <div class="fields">
+                <label>Student Name:</label>
+                <label id="studentNameval">Enter Student Name</label>
+            </div>
+            <div class="fields">
+                <label>Date of Birth:</label>
+                <label id="dateofbirthval">Enter DOB </label>
+            </div>
+            <div class="fields">
+                <label>Class:</label>
+                <label id="classval">Enter Class </label> 
+            </div>
+            <div class="fields">
+                <label>Roll Number:</label>
+                <label id="rollnumberval">Enter ROLNO </label>
+            </div>
+            <div class="fields">
+                <label>Contact Number:</label>
+                <label id="contactnumberval"> Enter CONTACT </label>
+            </div>
+            <div class="buttoncontainer">
+               <button class="btn print" type="button" onclick="printidcard()">Print Id card</button>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

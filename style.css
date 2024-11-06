@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+body{
+    background-color:#fff;
+}
+.container{
+    display: flex;
+}
+.box{
+    background-color: #fff;
+    width: 500px;
+    margin-right: 20px;
+    /*box-shadow: x y blur size color;*/
+    box-shadow: inset 0px 0px 10px 10px black;
+}
+.title{
+    background-color: black;
+    color: #fff;
+    padding: 10px 50px;
+    text-align: center;
+}
+.fields{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+ 
+
+}
+.fields > label{
+   
+   font-size: 18px;
+   font-family:Arial, Helvetica, sans-serif ;
+   justify-content: left;
+}
+.btn{
+    padding: 8px 30px;
+    background-color: blue;
+    border: 2px solid green;
+    color: #fff;
+    cursor: pointer ;
+
+   
+    
+}
+.btn.print{
+    margin-top: 10px;
+    display: 0;
+
+}
+.buttoncontainer{
+    padding: 10px 20px;
+
+}
+.ml-10{
+    margin-left: 10px;
+}
+.imagecontainer{
+    width: 75px;
+    height: 75px;
+    background-color: black;
+    box-shadow: 0 0 5px blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 20px auto;
+ 
+}
+.imagecontainer > img{
+    max-width: 100px;
+    max-height: 100px;
+    
+
+}
+@media print{
+    body{
+       visibility: hidden;
+    }
+    .formInput{
+        display: none;
+
+    }
+}
+.card{
+   visibility: visible;
+}
